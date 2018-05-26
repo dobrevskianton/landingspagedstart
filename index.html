@@ -20,7 +20,7 @@
         <div class="row">
           <div class="col s12">
             <h1>
-              DSTART
+              Evolving Asteroid Starship
             </h1>
           </div>
         </div>
@@ -40,4 +40,76 @@
   </div>
 </body>
 
+ <body>
+  <div class="">
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <h1>
+              Evolving Asteroid Starship
+            </h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m6 l2">
+            I am text in a large container on mobile, a medium container (50%) on tablet and a large container on desktop.
+          </div>
+          <div class="col s12 m6 l2">
+            Each row has 12 columns; s12 means span over 12 columns for small devices. m6 means span over 6 columns for medium sized devices. And s1 means; i'm small on large devices, only a single column.
+            You specify this stuff in the class.
+          </div>
+        </div>
+         <p class="flow-text">I am Flowing Text, meaning I scale responsive</p>
+         <a class="waves-effect waves-light btn" href="https://materializecss.com/buttons.html" target="_blank">click me for more info</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+</style>
+</head>
+<body>
+
+<div class="container" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+
+<script>
+function myFunction(x) {
+    x.classList.toggle("change");
+}
+</script>
+
+</body>
+  
 </html>
